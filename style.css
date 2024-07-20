@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signup, .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: translateY(-5%);
+    /* border: 1px solid black; */
+}
+.login {
+    display: none;
+    transition: 0.5 ease-in;
+}
+form {
+    /* box-shadow: 1px 1px 5px black; */
+    padding: 20px;
+    width: 350px;
+}
+.form-title {
+    font-size: 3.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+h2, p {
+    text-align: center;
+    margin-block: 7px;
+}
+.form-subtitle {
+    color: rgb(71, 71, 71);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+input {
+    margin-block: 15px;
+    width: 100% ;
+    padding: 12px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgb(108, 102, 102);
+}
+input:focus {
+    border-color: rgb(110, 187, 239);
+}
+#signup, #login {
+    background-color: rgb(26, 111, 145);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+@keyframes fadein {
+    0% {
+        transform: scale(0.2);
+        opacity: 0%;
+    }
+    50% {
+        
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+.link   {
+    text-decoration: none;
+    color: rgb(8, 84, 138);
+}
+
+.kanban-nav {
+    background-color: rgb(58, 150, 225);
+    padding: 20px;
+    color: white;
+    /* height: 200px; */
+}
+.kanban-nav h2 {
+    letter-spacing: 2px;
+    text-align: center;
+}
+.kanban {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 40px;
+    /* height: 100vh; */
+    
+}
+.colum {
+    width: 300px;
+    box-shadow: 1px 1px 5px grey;
+    height: 300px;
+    padding: 20px;
+}
+
+.task-box input {
+    width: 80%;
+    display: inline-block;
+    padding: 8px;
+}
+#add {
+    color: white;
+    outline: none;
+    border: none;
+    padding: 6px 10px;
+    background-color: rgb(37, 140, 218);
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+}
+.tasks-area p {
+    text-align: start;
+}
